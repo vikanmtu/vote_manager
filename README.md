@@ -39,3 +39,6 @@ Find voters in database:
 
 This is a project for Borland C++ Builder 6.
 Source code is on C (core: QR-code generator, jpeg-compressor, sqlite etc.) and C++ (GUI).
+
+Developer: Viktoria Malevanchenko, student of NMTU named acad.Yu.Bugai, Ukraine, Poltava, 2020
+MaitTo: vika_nmtu@protonmail.com
