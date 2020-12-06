@@ -1,8 +1,9 @@
 object Form1: TForm1
-  Left = 234
-  Top = 150
+  Left = 223
+  Top = 139
   Width = 630
-  Height = 698
+  Height = 752
+  VertScrollBar.Position = 36
   Caption = #1056#1077#1076#1072#1082#1090#1086#1088' '#1087#1086#1080#1084#1077#1085#1085#1086#1081' '#1073#1072#1079#1099' '#1080#1079#1073#1080#1088#1072#1090#1077#1083#1077#1081
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -5208,20 +5209,20 @@ object Form1: TForm1
   TextHeight = 13
   object Label1: TLabel
     Left = 0
-    Top = 8
+    Top = -28
     Width = 118
     Height = 13
     Caption = 'Registrtor'#39's DB (reg.db3):'
   end
   object Shape1: TShape
     Left = 0
-    Top = 64
+    Top = 28
     Width = 601
     Height = 2
   end
   object LabelInfo: TLabel
     Left = 48
-    Top = 40
+    Top = 4
     Width = 553
     Height = 17
     Hint = #1080#1085#1092#1086#1088#1084#1072#1094#1080#1103' '#1086#1073' '#1086#1087#1077#1088#1072#1094#1080#1103#1093
@@ -5237,7 +5238,7 @@ object Form1: TForm1
   end
   object Label5: TLabel
     Left = 0
-    Top = 40
+    Top = 4
     Width = 21
     Height = 13
     Hint = #1048#1085#1092#1086#1088#1084#1072#1094#1080#1103' '#1086#1073' '#1086#1087#1077#1088#1072#1094#1080#1103#1093
@@ -5247,7 +5248,7 @@ object Form1: TForm1
   end
   object EditDBPath: TEdit
     Left = 128
-    Top = 8
+    Top = -28
     Width = 361
     Height = 21
     Hint = #1055#1091#1090#1100' '#1082' '#1092#1072#1081#1083#1091' '#1073#1072#1079#1099' '#1076#1072#1085#1085#1099#1093
@@ -5257,7 +5258,7 @@ object Form1: TForm1
   end
   object ButtonDBPath: TButton
     Left = 496
-    Top = 8
+    Top = -28
     Width = 25
     Height = 25
     Hint = #1042#1099#1073#1086#1088' '#1092#1072#1081#1083#1072' '#1073#1072#1079#1099' '#1076#1072#1085#1085#1099#1093
@@ -5269,7 +5270,7 @@ object Form1: TForm1
   end
   object ButtonDBOpen: TButton
     Left = 528
-    Top = 8
+    Top = -28
     Width = 73
     Height = 25
     Hint = #1054#1090#1082#1088#1099#1090#1100' / '#1079#1072#1082#1088#1099#1090#1100' '#1073#1072#1079#1091' '#1076#1072#1085#1085#1099#1093
@@ -5287,7 +5288,7 @@ object Form1: TForm1
   end
   object GroupBoxEdit: TGroupBox
     Left = 8
-    Top = 458
+    Top = 422
     Width = 593
     Height = 303
     Caption = #1056#1077#1076#1072#1082#1090#1080#1088#1086#1074#1072#1085#1080#1077
@@ -5425,7 +5426,7 @@ object Form1: TForm1
       OnClick = ButtonQRClick
     end
     object EditVoter: TEdit
-      Left = 104
+      Left = 248
       Top = 24
       Width = 73
       Height = 21
@@ -5436,7 +5437,7 @@ object Form1: TForm1
       Text = 'NEW'
     end
     object ButtonLoad: TButton
-      Left = 224
+      Left = 336
       Top = 16
       Width = 89
       Height = 33
@@ -5448,7 +5449,7 @@ object Form1: TForm1
       OnClick = ButtonLoadClick
     end
     object ButtonNext: TButton
-      Left = 368
+      Left = 456
       Top = 16
       Width = 89
       Height = 33
@@ -5486,7 +5487,7 @@ object Form1: TForm1
   end
   object RadioButtonSearch: TRadioButton
     Left = 0
-    Top = 72
+    Top = 36
     Width = 65
     Height = 17
     Hint = #1042#1082#1083#1072#1076#1082#1072' '#1087#1086#1080#1089#1082#1072' '#1074' '#1073#1072#1079#1077' '#1076#1072#1085#1085#1099#1093
@@ -5498,7 +5499,7 @@ object Form1: TForm1
   end
   object RadioButtonEdit: TRadioButton
     Left = 80
-    Top = 72
+    Top = 36
     Width = 113
     Height = 17
     Hint = #1042#1082#1083#1072#1076#1082#1072' '#1076#1086#1073#1072#1074#1083#1077#1085#1080#1103'/'#1088#1077#1076#1072#1082#1090#1080#1088#1086#1074#1072#1085#1080#1103' '#1079#1072#1087#1080#1089#1077#1081' '#1074' '#1073#1072#1079#1077' '#1076#1072#1085#1085#1099#1093
@@ -5512,7 +5513,7 @@ object Form1: TForm1
   end
   object RadioButtonQR: TRadioButton
     Left = 224
-    Top = 72
+    Top = 36
     Width = 73
     Height = 17
     Hint = #1042#1082#1083#1072#1076#1082#1072' '#1089#1075#1077#1085#1077#1088#1080#1088#1086#1074#1072#1085#1085#1086#1075#1086' '#1087#1088#1080#1075#1083#1072#1096#1077#1085#1080#1103' '#1091#1095#1072#1089#1090#1085#1080#1082#1072' '#1085#1072' '#1074#1099#1073#1086#1088#1099
@@ -5524,7 +5525,7 @@ object Form1: TForm1
   end
   object GroupBoxSearch: TGroupBox
     Left = 8
-    Top = 100
+    Top = 64
     Width = 593
     Height = 346
     Caption = #1055#1086#1080#1089#1082
@@ -5637,7 +5638,7 @@ object Form1: TForm1
   end
   object GroupBoxQR: TGroupBox
     Left = 608
-    Top = 8
+    Top = -28
     Width = 593
     Height = 545
     Caption = 'QR-'#1082#1086#1076
@@ -5666,7 +5667,7 @@ object Form1: TForm1
   end
   object RadioButtonAbout: TRadioButton
     Left = 408
-    Top = 72
+    Top = 36
     Width = 105
     Height = 17
     Hint = #1042#1082#1083#1072#1076#1082#1072' "'#1086'  '#1087#1088#1086#1075#1088#1072#1084#1084#1077' '#1080' '#1072#1074#1090#1086#1088#1077'"'
@@ -5678,7 +5679,7 @@ object Form1: TForm1
   end
   object GroupBoxAbout: TGroupBox
     Left = 8
-    Top = 760
+    Top = 724
     Width = 593
     Height = 153
     Caption = #1054' '#1087#1088#1086#1075#1088#1072#1084#1084#1077
@@ -6243,7 +6244,7 @@ object Form1: TForm1
   end
   object GroupBoxCnd: TGroupBox
     Left = 648
-    Top = 208
+    Top = 172
     Width = 401
     Height = 473
     Caption = #1050#1072#1085#1076#1080#1076#1072#1090#1099
@@ -6356,7 +6357,7 @@ object Form1: TForm1
   end
   object RadioButtonCnd: TRadioButton
     Left = 312
-    Top = 72
+    Top = 36
     Width = 81
     Height = 17
     Hint = #1042#1082#1083#1072#1076#1082#1072' '#1089#1075#1077#1085#1077#1088#1080#1088#1086#1074#1072#1085#1085#1086#1075#1086' '#1087#1088#1080#1075#1083#1072#1096#1077#1085#1080#1103' '#1091#1095#1072#1089#1090#1085#1080#1082#1072' '#1085#1072' '#1074#1099#1073#1086#1088#1099

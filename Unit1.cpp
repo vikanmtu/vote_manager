@@ -226,7 +226,7 @@ void __fastcall TForm1::FormCreate(TObject *Sender)
 //================Load content of About page==================
 //load logo for About panel
   try{
-      RichEdit1->Lines->LoadFromFile(exePath + "res\\logo.rtf");
+      RichEdit1->Lines->LoadFromFile(exePath + "logo.rtf");
      }
   catch(...)
   {
@@ -616,6 +616,7 @@ void __fastcall TForm1::ButtonSaveClick(TObject *Sender)
    return;
   }
 
+
   //inform for user was changed
   if(i)
   {
@@ -626,6 +627,7 @@ void __fastcall TForm1::ButtonSaveClick(TObject *Sender)
   //or inform for ID of user was add to database
   LabelInfo->Caption="New Voter "+ IntToStr(j)+ " added to database";
   EditVoter->Text=IntToStr(j);
+  Voter=j;
 
 }
 //---------------------------------------------------------------------------
@@ -1011,6 +1013,7 @@ void __fastcall TForm1::ButtonSaveQRClick(TObject *Sender)
 
   char path[512];
   int pathlen;
+  char str[128];
 
   //get path of app
   AnsiString exeFile=Application->ExeName;
@@ -1038,10 +1041,12 @@ void __fastcall TForm1::ButtonSaveQRClick(TObject *Sender)
 
   //save binary dat_qrcode as alternative for jpeg QR-code
   sprintf(path+pathlen, "\\d_%d.dat", isqrcode); //compose file name by client number
-  file = fopen(path, "wb");
+  file = fopen(path, "wt");
   if(file)
   {
-    i=fwrite(dat_qrcode, sizeof(uint8_t), sizeof(dat_qrcode), file);
+    bin2str(dat_qrcode, str, sizeof(dat_qrcode)); 
+    //i=fwrite(dat_qrcode, sizeof(uint8_t), sizeof(dat_qrcode), file);
+    fprintf(file, "%s\r\n", str);
     fclose(file);
   }
   file=0;
